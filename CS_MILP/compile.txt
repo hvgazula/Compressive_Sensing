@@ -1,0 +1,2 @@
+gcc -c -m64 -std=c99 -fPIC -I/$CPLEXINC cpx_c.c -o cpx_c.o
+gcc -m64 -fpic -I/$CPLEXINC cpx_c.o -o cpx_c.exe -L/$CPLEXLIB -lcplex -lm -pthread
